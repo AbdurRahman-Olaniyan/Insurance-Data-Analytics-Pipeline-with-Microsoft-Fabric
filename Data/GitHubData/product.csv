@@ -1,0 +1,21 @@
+ProductID,ProductName,Category,Premium,CoverageType,DurationMonths
+PROD001,Auto Shield Basic,Vehicle,45000,Third Party,12
+PROD002,Auto Shield Plus,Vehicle,85000,Comprehensive,12
+PROD003,Auto Shield Fleet,Vehicle,150000,Fleet,12
+PROD004,Health Secure Basic,Health,90000,Individual,12
+PROD005,Health Secure Family,Health,180000,Family,12
+PROD006,Health Secure Premium,Health,300000,Premium,12
+PROD007,Home Protect Basic,Property,120000,Building,24
+PROD008,Home Protect Plus,Property,220000,Building+Content,24
+PROD009,Renters Cover,Property,60000,Content,12
+PROD010,SME Protect,Business,250000,SME,12
+PROD011,Shop Protect,Business,140000,Retail,12
+PROD012,Agro Shield,Agriculture,110000,Crop,12
+PROD013,Livestock Guard,Agriculture,130000,Livestock,12
+PROD014,Travel Safe,Travel,35000,Single Trip,6
+PROD015,Travel Safe Annual,Travel,95000,Multi Trip,12
+PROD016,Device Cover,Gadget,30000,Electronics,12
+PROD017,Device Cover Plus,Gadget,55000,Electronics+,12
+PROD018,Life Secure Term,Life,200000,Term,60
+PROD019,Life Secure Whole,Life,400000,Whole,120
+PROD020,Student Health Plan,Health,50000,Student,12
