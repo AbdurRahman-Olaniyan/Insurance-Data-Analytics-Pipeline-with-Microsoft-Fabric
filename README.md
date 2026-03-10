@@ -373,7 +373,7 @@ A simple naming convention could be:
 
 * Lakehouse: `Insurance_Bronze`
 * Warehouse: `Insurance_Silver` `Insurance_Gold`
-* Scemas: `bronze` `silver` `gold`
+* Schemas: `bronze` `silver` `gold`
 * Mirrored DB: takes the name of your sql server db, `InsuranceDB`
 
 ### 4. Configure Bronze Ingestion
