@@ -627,7 +627,7 @@ This repository includes:
 
 Potential next enhancements include:
 
-* add Mirror sync validation checkpoint to pipeline orchestration
+* adding Mirror sync validation checkpoint to pipeline orchestration
 * parameterizing notebook paths and environment names
 * adding incremental load patterns instead of full refreshes
 * introducing data quality rules with pass/fail thresholds
