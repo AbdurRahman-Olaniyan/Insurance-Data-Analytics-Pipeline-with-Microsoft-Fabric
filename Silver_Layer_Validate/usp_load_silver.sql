@@ -41,7 +41,7 @@ SELECT
     NULLIF(LTRIM(RTRIM(AgentName)), '') AS AgentName,
     NULLIF(LTRIM(RTRIM(Region)), '') AS Region,
     TRY_CONVERT(date, NULLIF(LTRIM(RTRIM(HireDate)), ''), 103) AS HireDate,
-    TRY_CONVERT(decimal(10,2), NULLIF(LTRIM(RTRIM(PerformanceRating)), '')) AS PerfomanceRating
+    TRY_CONVERT(decimal(10,2), NULLIF(LTRIM(RTRIM(PerformanceRating)), '')) AS PerformanceRating
 FROM Insurance_Bronze.dbo.stg_agent
 WHERE NULLIF(LTRIM(RTRIM(AgentID)), '') IS NOT NULL;
 
@@ -52,7 +52,7 @@ DROP TABLE IF EXISTS silver.customer
  AS
  SELECT 
     NULLIF(LTRIM(RTRIM(CustomerID)), '') AS CustomerID,
-    NULLIF(LTRIM(RTRIM(FullName)), '') AS FUllName,
+    NULLIF(LTRIM(RTRIM(FullName)), '') AS FullName,
     NULLIF(LTRIM(RTRIM(Gender)), '') AS Gender,
     TRY_CONVERT(date, NULLIF(LTRIM(RTRIM(DOB)), ''), 103) AS DOB,
     NULLIF(LTRIM(RTRIM(City)), '') AS City,
@@ -70,7 +70,7 @@ CREATE TABLE silver.dim_date
 AS
 SELECT 
     TRY_CONVERT(int, NULLIF(LTRIM(RTRIM(DateKey)), '')) AS DateKey,
-    TRY_CONVERT(date, NULLIF(LTRIM(RTRIM(FullDate)), '')) AS FullDate,
+    TRY_CONVERT(date, NULLIF(LTRIM(RTRIM(FullDate)), ''), 103) AS FullDate,
     TRY_CONVERT(int, NULLIF(LTRIM(RTRIM([Year])), '')) AS [Year],
     NULLIF(LTRIM(RTRIM(Quarter)), '') AS Quarter,
     TRY_CONVERT(int, NULLIF(LTRIM(RTRIM([Month])), '')) AS [Month],
